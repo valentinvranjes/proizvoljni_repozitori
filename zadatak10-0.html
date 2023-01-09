@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reorganizacija forme - korištenje table taga</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <div>
+                    <label id="title1" for="Field1">Ime i prezime</label>
+                        <div>
+                            <input id="Field1" name="Field1" type="text" size="8" tabindex="1">
+                        </div>
+                </div> 
+            </td>
+            <td rowspan="2">
+                <div>
+                    <label class="desc" id="title4" for="Field4">Poruka</label>
+                        <div>
+                            <textarea id="Field4" name="Field4" type=" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+                        </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <label id="title3" for="Field3">Email</label>
+                        <div>
+                            <input id="Field3" name="Field3" type="email" spellcheck="false" vale="" maxlength="255" tabindex="3">
+                        </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>
+                    <fieldset>
+                    <legend id="title5">Odaberi</legend>
+                    <div>
+                        <input id="radioDefault_5" name="Field5" type="hidden" value="">
+                            <div>
+                                <input id="Field5_0" name="Field5" type="radio" value="PrviOdabir" tabindex="5" checked="chechked">
+                                <label class="choice" for="Field5_0">Prvi Odabir</label>
+                            </div>
+            
+                            <div>
+                                <input id="Field5_1" name="Field5" type="radio" value="DrugiOdabir" tabindex="6">
+                                <label class="choice" for="Field5_1">Drugi Odabir</label>
+                            </div>
+            
+                            <div>
+                            <input id="Field5_2" name="Field5" type="radio" value="TrećiOdabir" tabindex="7">
+                            <label class="choice" for="Field5_2">Treći Odabir</label>
+                            </div>
+                    </div>
+                    </fieldset>
+                </div>
+            </td>
+            <td>
+                <div>
+                    <fieldset>
+                    <legend id="title6">Vištestruki odabir</legend>
+                    <div>
+                        <div>
+                            <input id="Field6" name="Field6" type="checkbox" value="prvi odabir" tabindex="8">
+                            <label class="choice" for="Field6">Prvo</label>
+                        </div>
+            
+                        <div>
+                            <input id="Field7" name="Field7" type="checkbox" value="drugi odabir" tabindex="9">
+                            <label class="choice" for="Field6">Drugo</label>
+                        </div>
+            
+                        <div>
+                            <input id="Field8" name="Field8" type="checkbox" value="drugi odabir" tabindex="10">
+                            <label class="choice" for="Field8">Treće</label>
+                        </div>
+                    </div>
+                    </fieldset>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <div>
+                    <label id="title106" for="Field106">Odaberi s liste</label>
+                    <div>
+                        <select id="Field106" name="Fied106" tabindex="11">
+                            <option value="prvi odabir1">Prvi - 1</option>
+                            <option value="prvi odabir2">Prvi - 2</option>
+                            <option value="prvi odabir3">Prvi - 3</option>
+                        </select>
+                    </div>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" align="right">
+            <div>
+                <div>
+                    <input id="saveForm" name="saveForm" type="submit" value="Potvrdi">
+                </div>
+            </div>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
