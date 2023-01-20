@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+        .moj-brojac {
+            margin-left: 0;
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .moj-brojac li::before {
+            content: "0";
+            margin-right: 5px;
+            font-size: 80%;
+            background-color: rgb(255,0,0); /* red */
+            color: blue;
+            font-weight: bold;
+            padding: 3px 8px;
+            border-radius: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <ol class="moj-brojac">
+        <li><span>prvi element</span></li>
+        <li>drugi element</li>
+        <li>treći element</li>
+        <li>četvrti element</li>
+        <li><span>peti element</span></li>
+        <li>šesti element</li>
+    </ol>
+</body>
+</html>
