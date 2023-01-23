@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color:lightgray;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .bijelo {
+            background-color: white;
+            height: 100vh;
+            width: 500px;
+            margin: auto;
+            padding-right: 5%;
+            padding-left: 5%;
+            padding-top: 10%;
+        }
+
+        .menu-traka {
+            background-color: black;
+            width: 100%;
+            height: 7vh;
+            position: relative;
+            top: 50px;
+        }
+
+        .crvena {
+            background-color: red;
+            width: 25%;
+            height: 35px;
+        }
+
+        .crna {
+            background-color: black;
+            width: 50%;
+            height: 35px;            
+        }
+
+        .zelena {
+            background-color: green;
+            width: 25%;
+            height: 35px;
+        }
+
+        
+
+        .tekst1 {
+            font-size: 26px;
+            text-align: center;
+            color: white;
+        }
+
+        .tekst2 {
+            font-size: 16px;
+            text-align: justify;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="menu-traka"></div>
+    <div class="bijelo">
+        <p class="tekst2">
+            Koristeći pseudoelemente :before i :after, možemo proširiti prividnu pozadinu elementa h2 izvan &#8249;section&#8250; u kojem se nalazi. Nažalost, ovo pokreće horizontalnu traku za pomicanje, tako da moramo postaviti i html i body elemente na owerflow-x: hidden. Osim ako vam nije potrebna dodatna fleksibilnost oblikovanja obje strane (različite boje, visine, širine, gradijenti itd.), postoji jednostavniji pristup koji koristi negativne margine i ispune.
+        </p>
+    </div>
+</body>
+</html>
