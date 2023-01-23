@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* both */
+        html, body {
+            font-family: Arial;
+            owerflow-x: hidden;
+        }
+        body {
+            background: #ccc;
+        }
+        section {
+            box-sizing: border-box; /* or not */
+            margin: 0 auto;
+            width: 25rem;
+            background: white;
+            padding: 30px;
+            padding-bottom: 60px;
+        }
+        .full-width {
+            position: relative; /* child absolute */
+            /* negative offset = section padding */
+            margin: 0 -30px;
+            /* add back section padding value */
+            padding: .25rem 30px;
+            background: black;
+            color: white;
+            font-size: 1.125rem;
+        }
+        .full-width:before, .full-width:after {
+            content: "";
+            position: absolute;
+            /* fill vertically */
+            top: 0;
+            bottom: 0;
+            width: 960px; /* ukoliko širina premala, kod resize ekrana neće biti dobro... stavimo veću brojku */
+            right: 100%;
+            background: red;
+        }
+        .full-width:after {
+            width: 960px; /* također i kod ovoga ukoliko je širina premala kod resize ekrana neće biti dobro, stavimo veću brojku */
+            left: 100%; /* not browser prefixed */
+            background: green;
+    </style>
+</head>
+<body>
+    <section>
+        <h2 class="full-width">Traka pune širine s pseudo elementima</h2>
+        <p>Koristeći pseudoelemente :before i :after, možemo proširiti prividnu pozadinu elementa h2 izvan &#8249;section&#8250; u kojem se nalazi.</p>
+        <p>Nažalost, ovo pokreće horizontalnu traku za pomicanje, tako da moramo postaviti i html i body elemente na owerflow-x: hidden.</p>
+        <p>Osim ako vam nije potrebna dodatna fleksibilnost oblikovanja obje strane (različite boje, visine, širine, gradijenti itd.), postoji jednostavniji pristup koji koristi negativne margine i ispune.</p>
+    </section>
+</body>
+</html>
