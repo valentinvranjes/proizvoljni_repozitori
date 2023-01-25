@@ -15,8 +15,8 @@
             border: 1px dotted blue;
         }
         
-        p, element1, #odlomak1 {
-            font-family:'Courier New';
+        p, .element1, #odlomak1 {
+            font-family: 'Courier New', Courier, monospace;
             border: 3px solid blue;
         }
 
@@ -33,15 +33,20 @@
 </head>
 <body>
     <p>Paragraf sa svojstvima</p>
-    <table>
-        <tr>
-            <td>Prvi podatak</td>
-            <td>Drugi podatak</td>
-            <td>Treći podatak</td>
-            <td>Četvrti podatak</td>
-        </tr>
-    </table>
+        <table>
+            <tr>
+                <td><a href="#">Prvi podatak</a></td>
+                <td>Drugi podatak</td>
+            </tr>
+                <td>Treći podatak</td>
+                <td class="element1">Četvrti podatak</td>
+            </tr>
+        </table>
     <p>Drugi paragraf sa svojstvima</p>
     <p class="element2">Treći paragraf sa svojstvima</p>
+    
+    <section id="odlomak1">Neki tekst unutar sekcije
+        <p class="element3">Paragraf unutar sekcije</p>
+    </section>
 </body>
 </html>
