@@ -1,70 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moja stranica s vertikalnim tabovima</title>
-    <link rel="stylesheet" href="css/style.css"
+    <!-- Tabs CSS tj. CSS je externi -->
+    <link rel="stylesheet" href="/23.sijecanj/style.css">
 </head>
+
 <body>
     <header class="Header">
         <div class="header-line">
             <h1 class="full-width-header">Moja stranica sa vertikalnim tabovima</h1>
         </div>
     </header>
-<!-- Generalni div u kojem ćemo poslagati sve naše html elemente-->
-<div class="content">
-    <section class="tabs-container">
-        <label for="tab1">Priroda</label>
-        <label for="tab2">Cvijeće</label>
-        <label for="tab3">Planine</label>
-        <label for="tab4">Zgrade</label>
-        <label for="tab5">Ceste</label>
-        <label for="tab6">Šume</label>
-    </section>
+    <!-- Generalni div u kojem ćemo poslagati sve naše html elemente-->
+    <div class="content">
+        <section class="tabs-container">
+            <label for="tab1">Priroda</label>
+            <label for="tab2">Cvijeće</label>
+            <label for="tab3">Planine</label>
+            <label for="tab4">Zgrade</label>
+            <label for="tab5">Ceste</label>
+            <label for="tab6">Šume</label>
+        </section>
 
-    <input name="tab" id="tab1" type="radio" checked/>
-    <section class="tab-content">
-        <h2>Priroda</h2>
-            <p>Neki moj tekst koji je povezan s prirodom</p>
-                <img src="img/sea.jpg" alt="More"/>
-            <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
-    </section>
-    <input name="tab" id="tab2" type="radio"/>
-    <section class="tab-content">
-        <h2>Cvijeće</h2>
-            <p>Neki moj tekst koji je povezan s prirodom</p>
-                <img src="img/flowers.jpg" alt="More"/>
-            <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
-    </section>
-    <input name="tab" id="tab3" type="radio"/>
+        <input name="tab" id="tab1" type="radio" checked />
         <section class="tab-content">
-        <h2>Planine</h2>
+            <h2>Priroda</h2>
             <p>Neki moj tekst koji je povezan s prirodom</p>
-                <img src="img/sea.jpg" alt="More"/>
+            <img src="img/sea.jpg" alt="More" />
             <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
-    </section>
-    <input name="tab" id="tab4" type="radio"/>
+        </section>
+        <input name="tab" id="tab2" type="radio" />
         <section class="tab-content">
-        <h2>Zgrade</h2>
+            <h2>Cvijeće</h2>
             <p>Neki moj tekst koji je povezan s prirodom</p>
-                <img src="img/sea.jpg" alt="More"/>
+            <img src="img/flowers.jpg" alt="More" />
             <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
-    </section>
-    <input name="tab" id="tab5" type="radio"/>
+        </section>
+        <input name="tab" id="tab3" type="radio" />
         <section class="tab-content">
-        <h2>Ceste</h2>
+            <h2>Planine</h2>
             <p>Neki moj tekst koji je povezan s prirodom</p>
-                <img src="img/sea.jpg" alt="More"/>
+            <img src="img/sea.jpg" alt="More" />
             <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
-    </section>
-    <input name="tab" id="tab6" type="radio"/>
+        </section>
+        <input name="tab" id="tab4" type="radio" />
         <section class="tab-content">
-        <h2>Šume</h2>
+            <h2>Zgrade</h2>
             <p>Neki moj tekst koji je povezan s prirodom</p>
-                <img src="img/sea.jpg" alt="More"/>
+            <img src="img/sea.jpg" alt="More" />
             <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
-    </section>
-</div>
+        </section>
+        <input name="tab" id="tab5" type="radio" />
+        <section class="tab-content">
+            <h2>Ceste</h2>
+            <p>Neki moj tekst koji je povezan s prirodom</p>
+            <img src="img/sea.jpg" alt="More" />
+            <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
+        </section>
+        <input name="tab" id="tab6" type="radio" />
+        <section class="tab-content">
+            <h2>Šume</h2>
+            <p>Neki moj tekst koji je povezan s prirodom</p>
+            <img src="img/sea.jpg" alt="More" />
+            <p>Opis koji će se odnositi na prethodnu sliku prirode</p>
+        </section>
+    </div>
 </body>
+
 </html>
