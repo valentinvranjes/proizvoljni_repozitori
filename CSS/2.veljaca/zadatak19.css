@@ -1,0 +1,25 @@
+/* AUTO GRID set the minimum size with '-- auto-grid-min-sze' and you'll get a fully responsive grid with no media queris. */
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+}
+
+/* Presentional styles */
+
+body {
+    background: lightgray;
+    padding: 1rem;
+    line-height: 1.4;
+    font-family: sans-serif;
+}
+
+li {
+    list-style: none;
+    padding: 5rem 1rem;
+    text-align: center;
+    font-size: 1,2rem;
+    background: #eb4d4b;
+    color: #ffffff;
+}
