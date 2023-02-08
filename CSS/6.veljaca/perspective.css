@@ -1,0 +1,41 @@
+div {
+    line-height: 150px;
+}
+
+#container {
+    top: 25px;
+    left: 25px;
+    position: absolute;
+}
+
+.group {
+    display: inline-block;
+    width: 200px;
+    height: 150px;
+}
+
+.original, .transformed {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    position: absolute;
+}
+
+.original { background-color: black;}
+
+.transformed {
+    background-color: tomato;
+    opacity: 0.8;
+}
+
+#container {
+    top: 25px;
+    left: 25px;
+    position: absolute;
+}
+
+#transformed-1 { transform: perspective(500px) rotateY(40deg); }
+#transformed-2 { transform: perspective(500px) rotateY(60deg); }
+#transformed-3 { transform: perspective(500px) rotateY(80deg); }

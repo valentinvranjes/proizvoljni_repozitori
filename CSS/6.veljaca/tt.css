@@ -1,0 +1,19 @@
+div {
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    border-radius: 20px;
+    position: absolute;
+    color: white;
+    text-align: center;
+}
+
+#div-1 {
+    background-color: black;
+}
+
+#div-2 {
+    transform: translate(100px, 75px);
+    background-color: tomato;
+    opacity: 0.8;
+}
